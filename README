@@ -1,28 +1,27 @@
-# Rubygame
-a small Ruby coding experience
+Rubygame
+========
+A small Ruby coding experience
 
 About
 -----
 This is just a small text adventure project to teach myself Ruby.
-I find ist more compelling to learn programming by coding real
-projects than just 'Fibunaci' algorithms. Therefore, this is just
+I find it more compelling to learn programming by coding real
+projects than just write 'Fibunaci' algorithms. Therefore, this is just
 a first attempt to learn Ruby.
 
 Contribute
 ----------
-Sure, you can contribute code or even better you write a great
+Sure, you can contribute code or even better you can write a great
 story and also create some nice maps. Later on we could add many
 other objects like: characters, items, things, quests and skills.
 
 Help
 ----
-As I said before this just code for my personal need. Yet it would
-fun to find others who are new or experienced with Ruby programming
- to help me write better code. This might be a good experience for
- all participants.so, fool free to join me.
+As I said before, this is just code for my personal need. Yet, it would
+be fun to find others who are new to Ruby programming, too. Experienced
+ Ruby coders are welcome. They can help us to write better code.
+ This might be a good experience for all participants. So, free to join in.
 
 License
 -------
-This code is under GPL 3.0 license.
-
-This file was modified by JetBrains RubyMine 5.4.1 for binding GitHub repository
+This code is licensed under GPL 3.0 license.
