@@ -1,15 +1,16 @@
-# That's my first small example code.
+
+# Base class for world items
 
 class Thing
   attr_accessor(:name, :description)
 
-  # @param [String] a_name
-  # @param [Object] a_description
   def initialize(a_name, a_description)
     @name = a_name
     @description = a_description
   end
 end
+
+# Defining the actor
 
 class Actor < Thing
   attr_accessor(:position)
@@ -20,6 +21,8 @@ class Actor < Thing
   end
 end
 
+# Defining treasure
+
 class Treasure < Thing
 
   def initialize(a_name, a_description, a_value)
@@ -27,6 +30,8 @@ class Treasure < Thing
     @value = a_value
   end
 end
+
+# Defining a room
 
 class Room < Thing
   attr_accessor(:north, :east, :south, :west)
@@ -50,6 +55,8 @@ class Map
   end
 end
 
+# Defining the game world
+
 class Game
   attr_accessor(:map)
 
@@ -58,10 +65,15 @@ class Game
   end
 end
 
+# Initializing the game world with data
+
 class Implementer
   attr_accessor(:game)
 
   def initialize(a_player)
+
+    # The rooms: ("Name", "Description", north, east, south, west)
+    # While "-1" = "no exit" all other no. represent the destination's room no.
 
     @room_0 = Room.new("Treasure Room", "a fabulous golden chamber", -1, 2, -1, 1)
     @room_1 = Room.new("Dragon's Lair", "a huge and glittering Lair", -1, -1, 0, -1)
@@ -72,6 +84,8 @@ class Implementer
 
     @game = Game.new([@room_0, @room_1, @room_2, @room_3], @player)
   end
+
+  # Move the player around the game world
 
   def move_actor_to(an_actor, a_direction)
     reply = 'No Exit!'
@@ -85,8 +99,12 @@ class Implementer
   end
 end
 
+# Create test player and game world
+
 the_player = Actor.new("John", "He is tall and a warrior.", 0)
 imp = Implementer.new(the_player)
+
+# Test the player's movement
 
 puts(imp.move_actor_to(the_player, :east))
 puts(imp.move_actor_to(the_player, :west))
