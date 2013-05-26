@@ -1,27 +1,28 @@
 Rubygame
 ========
-A small Ruby coding experience
 
-About
------
+A small Ruby coding experience.
+
+# About
 This is just a small text adventure project to teach myself Ruby.
 I find it more compelling to learn programming by coding real
 projects than just write 'Fibunaci' algorithms. Therefore, this is just
 a first attempt to learn Ruby.
 
-Contribute
-----------
+# Contribute
 Sure, you can contribute code or even better you can write a great
 story and also create some nice maps. Later on we could add many
 other objects like: characters, items, things, quests and skills.
 
-Help
-----
-As I said before, this is just code for my personal need. Yet, it would
-be fun to find others who are new to Ruby programming, too. Experienced
- Ruby coders are welcome. They can help us to write better code.
- This might be a good experience for all participants. So, free to join in.
+# Help
+Basically, this is just code for my personal use. Yet, it would
+be fun to find others who are new to Ruby programming. Also
+experienced Ruby coders are welcome, too. They can help us in
+writing better code and improve our skills faster on the go.
 
-License
--------
+# General
+I hope, this little project  be a good experience for all participants.
+So, feel free to join in.
+
+# License
 This code is licensed under GPL 3.0 license.
